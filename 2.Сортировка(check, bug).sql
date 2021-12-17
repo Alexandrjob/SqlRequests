@@ -5,3 +5,5 @@ ORDER BY ReleaseDate
 SELECT *
 FROM Clocks
 ORDER BY Price
+
+/*Сортировку по поставщику непонятно как делать*/
