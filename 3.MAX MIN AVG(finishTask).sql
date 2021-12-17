@@ -1,10 +1,10 @@
-SELECT MAX(Price) AS МаксимальнаяЦена
+SELECT MAX(Price) AS ГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­Г ГїГ–ГҐГ­Г 
 FROM Clocks 
 
-SELECT MIN(Price) AS МинимальнаяЦена 
+SELECT MIN(Price) AS ГЊГЁГ­ГЁГ¬Г Г«ГјГ­Г ГїГ–ГҐГ­Г  
 FROM Clocks
 
-SELECT AVG(Price) AS СредняяЦена
+SELECT AVG(Price) AS Г‘Г°ГҐГ¤Г­ГїГїГ–ГҐГ­Г 
 FROM Clocks
 
 SELECT
@@ -13,4 +13,4 @@ SELECT
 	(SELECT AVG(Price) FROM Clocks AS DClocks
 	WHERE DClocks.ClockTypeId = PClocks.ClockTypeId) AS AVGPrice 
 FROM Clocks AS PClocks
-/*Как и выборки убрать повторяющиеся значения*/
+/*РљР°Рє Рё РІС‹Р±РѕСЂРєРё СѓР±СЂР°С‚СЊ РїРѕРІС‚РѕСЂСЏСЋС‰РёРµСЃСЏ Р·РЅР°С‡РµРЅРёСЏ.*/
