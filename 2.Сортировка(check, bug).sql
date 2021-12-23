@@ -4,6 +4,10 @@ ORDER BY ReleaseDate
 
 SELECT *
 FROM Clocks
-ORDER BY Price
+JOIN Deliveries ON ClockId = Clocks.Id
+JOIN Suppliers ON SupplerId = Suppliers.Id
+ORDER BY Suppliers.Name
 
-/*Сортировку по поставщику непонятно как делать*/
+SELECT *
+FROM Clocks
+ORDER BY Price
